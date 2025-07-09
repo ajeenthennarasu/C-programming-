@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+
+    int intVal;
+
+    float floatVal;
+
+   
+
+    scanf("%d", &intVal);
+
+    scanf("%f", &floatVal);
+
+   
+
+    printf("%d\n", intVal);
+
+    printf("%.2f\n", floatVal); 
+
+    return 0;
+
+}
