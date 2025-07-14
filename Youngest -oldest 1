@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+
+    int n, i, age, youngest, oldest;
+
+    scanf("%d", &n);
+
+    if (n <= 0) {
+
+        printf("Invalid Input\n");
+
+        return 0;
+
+    }
+
+    scanf("%d", &age);
+
+    if (age < 0) {
+
+        printf("Invalid Input\n");
+
+        return 0;
+
+    }
+
+    youngest = oldest = age;
+
+    for (i = 1; i < n; i++) {
+
+        scanf("%d", &age);
+
+        if (age < 0) {
+
+            printf("Invalid Input\n");
+
+            return 0;
+
+        }
+
+        if (age < youngest) youngest = age;
+
+        if (age > oldest) oldest = age;
+
+    }
+
+    printf("Youngest=%d\nOldest=%d\n", youngest, oldest);
+
+    return 0;
+
+}
