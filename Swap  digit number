@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+
+    int num;
+
+   
+
+    scanf("%d", &num);
+
+ 
+
+    if (num < 10) {
+
+        printf("STDOUT\n");
+
+        return 0;
+
+    }
+
+ 
+
+    while (num >= 100) {
+
+        num /= 10;
+
+    }
+
+    
+
+    int first = num / 10;
+
+    int second = num % 10;
+
+    int swapped = second * 10 + first;
+
+    
+
+    printf("%d\n", swapped);
+
+    return 0;
+
+}
