@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+
+    int n;
+
+    char r, c, t;
+
+    scanf("%d %c %c %c", &n, &r, &c, &t);
+
+    if (n < 5 || n > 40) {
+
+        printf("Invalid Input\n");
+
+        return 0;
+
+    }
+
+    float cost = n * 150.0;
+
+    if (n > 20) {
+
+        cost *= 0.9;
+
+    }
+
+    if (c == 'y') {
+
+        cost *= 0.98;
+
+    }
+
+    if (r == 'y') {
+
+        cost += n * 50.0;
+
+    }
+
+    printf("Ticket cost:%.2f\n", cost);
+
+    return 0;
+
+}
